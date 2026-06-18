@@ -1,0 +1,13 @@
+name: CI Workflow
+
+on:
+  push:
+    branches: ["Main"]
+  pull_request:
+    branches: ["Main"]
+
+jobs:
+  build:
+    runs-on: Ubuntu-latest
+    container: python:3.9-slim
+
